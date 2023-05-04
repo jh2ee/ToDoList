@@ -22,15 +22,12 @@
 }
 .todolist{
     margin:auto;
-    float:left;
     padding-left: 20px;
-    padding-top: 20px;
 }
-
 input[type="checkbox"]{
     display:none;
 }
-input[type="checkbox"] + label{
+input[id="cb"] + label{
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -38,6 +35,7 @@ input[type="checkbox"] + label{
     box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;;;
     position: relative;
+    margin-right: 10px;
 }
 input[id="cb"]:checked + label::after{
     content:'✔';
@@ -48,4 +46,13 @@ input[id="cb"]:checked + label::after{
     position: absolute;
     left: 0;
     top:0;
+}
+
+#del{
+    float:right;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+#listitem{
+    text-align: left;
 }
